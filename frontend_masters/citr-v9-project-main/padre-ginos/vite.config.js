@@ -21,4 +21,7 @@ export default defineConfig({
     }),
     react(),
   ],
+  test: {
+    environment: "happy-dom",
+  },
 });

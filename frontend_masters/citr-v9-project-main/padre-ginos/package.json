@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
     "lint": "eslint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -18,13 +18,17 @@
     "@tanstack/react-query-devtools": "^5.90.2",
     "@tanstack/router-devtools": "^1.133.21",
     "@tanstack/router-plugin": "^1.133.21",
+    "@testing-library/react": "^16.3.0",
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
+    "happy-dom": "^20.0.8",
     "prettier": "^3.6.2",
-    "vite": "^7.1.11"
+    "vite": "^7.1.11",
+    "vitest": "^4.0.3",
+    "vitest-fetch-mock": "^0.4.5"
   },
   "dependencies": {
     "@tanstack/eslint-plugin-query": "^5.91.2",
