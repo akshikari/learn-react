@@ -5,10 +5,8 @@ import Pizza from "../Pizza";
 
 test("alt text renders on image", async () => {
   const name = "My favorite pizza";
-  const src = "https://picsum.photo/200";
-  render(
-    <Pizza name={name} image={src} description="issa pizza" />,
-  );
+  const src = "https://picsum.photos/200";
+  render(<Pizza name={name} image={src} description="issa pizza" />);
 
   const img = page.getByRole("img");
 
