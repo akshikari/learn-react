@@ -3,11 +3,16 @@ import { playwright } from "@vitest/browser-playwright";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react()],
   esbuild: {
     jsx: "automatic",
   },
   test: {
+    coverage: {
+      provider: "istanbul",
+      include: ["src/**/*.{js,jsx}"],
+      exclude: ["src/__tests__/**", "src/routes/**"],
+      reporter: ["text", "json", "html"],
+    },
     projects: [
       {
         plugins: [react()],
